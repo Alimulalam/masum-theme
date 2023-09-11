@@ -1,0 +1,233 @@
+
+.container-area{
+    max-width: 1100px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+#main-header{
+    padding-top: 180px;
+    height: 100vh;
+    background-color: #323437;
+    
+}
+#navbar{
+    background-color: #BE3144;
+    color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    position:fixed;
+    width: 100%; 
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+#navbar ul a{
+    display: inline-block;
+    padding: 0rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+#navbar ul a:hover{
+    background-color: rgb(253, 6, 47);
+}
+#main-header .container-area{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.lead{
+    font-size: 2rem;
+    color: #eee;
+}
+#projects{
+    text-align: center;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: #07294D;
+}
+#projects .project-tile{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
+    margin-top: 2rem;
+}
+#projects .container-area > h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.bottom-line{
+    height: 6px;
+    background-color: #fff;
+    width: 70%;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+#projects .project-tile .box{
+    background-color: #303841;
+    border: 5px solid #eee;
+    border-radius: 3px;
+}
+#projects .project-tile .box a{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    
+}
+#projects .project-tile .box a p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.code{
+    color: #eee;
+    transition: .5s all ease;
+    font-size: 1.6rem;
+}
+.project-name{
+    color: #eee;
+}
+#projects .project-tile .box:hover .code{
+    color: #45567D;
+}
+.btn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:#fff;
+    margin-top: 4rem;
+    text-align: center;
+    display: inline-block;
+    padding: .6rem 1.1rem;
+    border-radius: 6px;
+    background-color: #AB3144;
+    transition: .5s all ease-in-out;
+}
+.btn:hover{
+    background-color: #db4416;
+}
+
+/**Contact*/
+#contact{
+    height: 80vh;
+    background-color: #444;
+    color: #fff;
+}
+#contact .container-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#contact .container-area h1{
+   font-size: 4rem;
+   font-weight: 700;
+   padding-bottom: 1rem;
+   line-height: 1.2;
+   margin-bottom: 1rem;
+   color: #eee;;
+}
+#contact .container-area p{
+   font-size: 1.8rem;
+   font-weight: 700;
+   margin-bottom: 3rem;
+   color: #eee;;
+}
+#contact .container-area .social-media > div a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #eee;
+    margin: 1rem 2rem;
+    transition: transform .5s;
+   
+}
+#contact .container-area .social-media > div a:hover{
+    transform: translateY(-5px);
+}
+
+/*footer*/
+#main-footer{
+    border-top: 5px solid #BE3144;
+    padding: 1rem;
+    background-color: #444;
+    color: #fff;
+}
+#main-footer .container-area{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+#main-footer .container-area p{
+   font-size: 1.2rem;
+}
+
+#main-footer #creator a{
+    text-decoration: underline;
+    color: #eee;
+    line-height: 1.5;
+}
+   
+/*SmartPhone*/
+@media (max-width:600px){
+    #navbar{
+        
+        padding: 1rem 1rem;
+        justify-content: center;
+        position:fixed;
+        
+    }
+    #projects .project-tile{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* grid-row-gap: 4rem;
+        grid-column-gap: 2rem;
+        margin-top: 2rem; */
+    }
+   
+    #contact .container-area .social-media > div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    #contact .container-area .social-media > div a{
+        display: block;
+        margin: .8rem 1rem;
+        
+    }
+    #contact .container-area p{
+        margin-bottom: 1.5rem;
+     }
+     #main-footer .container-area{
+        flex-direction: column;
+    }
+    #main-footer #creator{
+        margin-top: 1rem;
+    }
+}
