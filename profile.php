@@ -1,6 +1,14 @@
 
+<?php
+    session_start();
 
+    if (!empty($_SESSION['useremail'])) {
+        // echo $_SESSION['useremail'];
 
+    }else{
+        header('location:auth/login.php');
+    }
+?>
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -36,6 +44,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- main part -->
 
@@ -135,16 +144,9 @@
                         <input type="hidden" name="update_id" id="update_id">
 
                         <div class="name_design">
-                            <div class="form-group mb-4 icon-design">
-                                <i class="fa-regular fa-user"></i>
-                                <input type="text" class="form-control border-bottom rounded-4" id="update_fname"
-                                    name="fname" placeholder="First Name">
-                            </div>
-
-                            <div class="form-group mb-4 icon-design">
-                                <i class="fa-regular fa-user"></i>
-                                <input type="text" class="form-control border-bottom rounded-4" id="update_lname"
-                                    name="lname" placeholder="Last Name">
+                            <div class="form-group mb-4 ">
+                                <input type="text" class="form-control border-bottom rounded-4" id="update_fullname"
+                                    name="fullname" placeholder="First Name">
                             </div>
                         </div>
 
@@ -178,13 +180,13 @@
                         <br><br>
 
                         <label for='education'>Education:</label>
-                        <input type="checkbox" id="ssc" name="education[]" value="ssc">
+                        <input type="checkbox" id="ssc" name="update_education[]" value="ssc">
                         <label for="ssc">SSC</label>
-                        <input type="checkbox" id="hsc" name="education[]" value="hsc">
+                        <input type="checkbox" id="hsc" name="update_education[]" value="hsc">
                         <label for="hsc">HSC</label>
-                        <input type="checkbox" id="bsc" name="education[]" value="bsc">
+                        <input type="checkbox" id="bsc" name="update_education[]" value="bsc">
                         <label for="bsc">BSc</label>
-                        <input type="checkbox" id="msc" name="education[]" value="msc">
+                        <input type="checkbox" id="msc" name="update_education[]" value="msc">
                         <label for="msc">MSc</label>
 
                         <br><br>
@@ -268,7 +270,7 @@
                         <table class="table table-bordered border-primary text-center" id="mytable">
                             <thead class="table-danger">
                                 <tr>
-                                    <th scope="col">#id</th>
+                                    <th scope="col">Serial NO</th>
                                     <th scope="col">Full Name</th>
                                     <th scope="col">profile Picture</th>
                                     <th scope="col">District</th>
@@ -463,20 +465,36 @@
                         // date of brith
                         $('#update_dob').val(value['date_of_birth']);
 
+                        //Education
 
-                        if (value['education'] === 'ssc') {
-                            console.log('Setting SSC checkbox as checked');
-                            $('#ssc').prop('checked', true);
-                        } else if (value['education'] === 'hsc') {
-                            console.log('Setting HSC checkbox as checked');
-                            $('#hsc').prop('checked', true);
-                        } else if (value['education'] === 'bsc') {
-                            console.log('Setting BSc checkbox as checked');
-                            $('#bsc').prop('checked', true);
-                        } else if (value['education'] === 'msc') {
-                            console.log('Setting MSc checkbox as checked');
-                            $('#msc').prop('checked', true);
-                        }
+                        var selectedEducationLevels = value['education'];
+
+                            if (typeof selectedEducationLevels === 'string') {
+                                // Split the comma-separated string into an array of values
+                                var educationArray = selectedEducationLevels.split(', ');
+
+                                // Iterate through the array and set the corresponding checkboxes
+                                educationArray.forEach(function (edu) {
+                                    $('input[name="update_education[]"][value="' + edu + '"]').prop('checked', true);
+                                });
+                            } else {
+                                console.log("Invalid education data:", selectedEducationLevels);
+                            }
+
+
+                        // if (value['education'] === 'ssc') {
+                        //     console.log('Setting SSC checkbox as checked');
+                        //     $('#ssc').prop('checked', true);
+                        // } else if (value['education'] === 'hsc') {
+                        //     console.log('Setting HSC checkbox as checked');
+                        //     $('#hsc').prop('checked', true);
+                        // } else if (value['education'] === 'bsc') {
+                        //     console.log('Setting BSc checkbox as checked');
+                        //     $('#bsc').prop('checked', true);
+                        // } else if (value['education'] === 'msc') {
+                        //     console.log('Setting MSc checkbox as checked');
+                        //     $('#msc').prop('checked', true);
+                        // }
 
 
                         // Gender Section

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>Edumate Education HTML Template</title>
+    <title>Masum Education </title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,60 +57,60 @@
                     </div>
                 </div>
             </div>
-
             <div id="navigation" class="navigation navigation-landscape">
-                <div class="container position-relative">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3">
-                            <div class="header-logo">
-                                <a href="../index.php"><img src="../assets/images/logo.png" alt=""></a>
-                            </div>
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="header-logo" style="padding-top: 16px;">
+                            <a href="index.php"><img src="../assets/images/logo.png" alt=""></a>
                         </div>
-                        <div class="col-lg-7 position-static">
-                            <div class="nav-toggle"></div>
-                            <nav class="nav-menus-wrapper">
-                                <ul class="nav-menu">
-                                    <li>
-                                        <a class="active" href="../index.php">Home</a>
-
-                                    </li>
-                                    <li>
+                    </div>
+                    <!-- <div class="col-lg-7 position-static">
+                        <div class="nav-toggle"></div>
+                        <nav class="nav-menus-wrapper">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a class="active" href="../index.php">Home</a>
+                                    
+                                </li>
+                                
+                                <li>
                                     <a href="../portfolio.php">Portfolio</a> 
                                 </li>
                                 <li>
                                     <a href="../profile.php">Profile</a> 
                                 </li>
-
-                                    <li>
-                                        <a href="#">Pages</a>
-                                        <ul class="nav-dropdown nav-submenu">
-                                            <li><a href="../about-us.php">About</a></li>
-
-                                            <li><a href="../gallery.php">Gallery</a></li>
-
-
-                                            <li><a href="../login.php"">Login</a></li>
-                                        <li><a href=" register.php">Register</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="../contact.php">Contact</a></li>
-                                </ul>
-                            </nav>
+                               
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li><a href="../about-us.php">About</a></li>
+                                        
+                                        <li><a href="../gallery.php">Gallery</a></li>
+                                        
+                                     
+                                        <li><a href="../login.php"">Login</a></li>
+                                        <li><a href="../register.php">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../contact.php">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div> -->
+                    <!-- <div class="col-lg-2 position-static">
+                        <div class="header-search">
+                            <form action="#">
+                                
+                                <input type="text" placeholder="Search">
+                                <button><i class="fas fa-search"></i></button>
+                            </form>
+                            
                         </div>
-                        <div class="col-lg-2 position-static">
-                            <div class="header-search">
-                                <form action="#">
-
-                                    <input type="text" placeholder="Search">
-                                    <button><i class="fas fa-search"></i></button>
-                                </form>
-
-                            </div>
-
-                        </div>
-                    </div>
+                        
+                    </div> -->
                 </div>
             </div>
+        </div>
         </header>
 
     <!--====== Header Ends ======-->
@@ -206,10 +206,6 @@
     <!--====== Newsletter Ends ======-->
 
     <!--====== Footer Start ======-->
-
-    <?php
-    include "../Split/footer.php";
-    ?>
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 

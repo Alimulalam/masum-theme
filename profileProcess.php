@@ -9,8 +9,8 @@ if (mysqli_num_rows($results) > 0) {
 
         echo "<tr>
                 <td class='profile_id'>" . $row['id'] . "</td>
-                <td><img src='images/" . $row['profilePicture'] . "' width='50px' height='50px'></td>
                 <td>" . $row['fullname'] . "</td>
+                <td><img src='images/" . $row['profilePicture'] . "' width='50px' height='50px'></td>
                 <td>" . $row['district'] . "</td>
                 <td>" . $row['date_of_birth'] . "</td>
                 <td>" . $educationText . "</td>

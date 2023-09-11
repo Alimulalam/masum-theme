@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    if (!empty($_SESSION['useremail'])) {
+        // echo $_SESSION['useremail'];
+
+    }else{
+        header('location:auth/login.php');
+    }
+?>
 
 <!doctype html>
 <html class="no-js" lang="en">
