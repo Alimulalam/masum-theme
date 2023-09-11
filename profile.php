@@ -257,7 +257,7 @@
                     }
                     ?>
                     <div class="card-header">
-                        <h2 class="text-center mb-3">Fetch Data From Database
+                        <h2 class="text-center mb-3">Add Your Information
                             <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal"
                                 data-bs-target="#addModal">
                                 Add item
@@ -265,8 +265,8 @@
                         </h2>
                     </div>
                     <div class="card-body">
-                        <table class="table table-bordered border-primary text-center">
-                            <thead class="table-dark">
+                        <table class="table table-bordered border-primary text-center" id="mytable">
+                            <thead class="table-danger">
                                 <tr>
                                     <th scope="col">#id</th>
                                     <th scope="col">Full Name</th>
@@ -463,12 +463,6 @@
                         // date of brith
                         $('#update_dob').val(value['date_of_birth']);
 
-
-                        // education
-                        // $('#bsc[value="' + value['education'] + '"]').prop('checked', true);
-
-                        // console.log('Education value from AJAX:', value[
-                        //     'education']);
 
                         if (value['education'] === 'ssc') {
                             console.log('Setting SSC checkbox as checked');

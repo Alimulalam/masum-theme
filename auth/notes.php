@@ -82,7 +82,8 @@
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-    <link href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+    
+        <link href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <!--====== Main Style CSS ======-->
 <link rel="stylesheet" href="../assets/css/style.css">
@@ -357,7 +358,7 @@
     </script>
 
     <script>
-
+//edit +++++++++++++++++++++++++++++++++++++++++++++++++++++
     edits = document.getElementsByClassName('edit');
     Array.from(edits).forEach((element) => {
         element.addEventListener("click", (e) => {
@@ -367,7 +368,7 @@
             title = tr.getElementsByTagName('td')[0].innerText;
 
             description = tr.getElementsByTagName('td')[1].innerText;
-            console.log(title, description);
+            //console.log(title, description);
             titleedit.value = title;
             decriptionedit.value = description;
             snoedit.value = e.target.id;
