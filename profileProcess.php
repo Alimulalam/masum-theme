@@ -15,7 +15,7 @@ if (mysqli_num_rows($results) > 0) {
                 <td>" . $row['date_of_birth'] . "</td>
                 <td>" . $educationText . "</td>
                 <td>" . $row['gender'] . "</td>
-                <td>" . $row['comments'] . "</td>
+                
                 <td>
                     <button class='btn btn-success update_btn'>Edit</button>
                     <button class='btn btn-danger delete_btn'>Delete</button>

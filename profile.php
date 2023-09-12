@@ -111,8 +111,8 @@
 
                         <br><br>
 
-                        <label for="comments">Comments:</label>
-                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                        <!-- <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea> -->
                     </div>
 
                     <div class="modal-footer">
@@ -199,8 +199,8 @@
 
                         <br><br>
 
-                        <label for="comments">Comments:</label>
-                        <textarea id="update_comments" name="comments" rows="4" cols="50"></textarea>
+                        <!-- <label for="comments">Comments:</label>
+                        <textarea id="update_comments" name="comments" rows="4" cols="50"></textarea> -->
 
                     </div>
 
@@ -277,7 +277,7 @@
                                     <th scope="col">Date of Birth</th>
                                     <th scope="col">Education</th>
                                     <th scope="col">Gender</th>
-                                    <th scope="col">Comments</th>
+                                    <!-- <th scope="col">Comments</th> -->
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>

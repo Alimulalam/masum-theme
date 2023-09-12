@@ -218,6 +218,40 @@
                         </p>
                     </a>
                 </div>
+
+                <div target="_blank" class="box">
+                    <a href="https://alimulalam.github.io/education-pro/" id="profile-link" target="_blank">
+                        <img src="image/EDUCATION PRO.png" alt="" class="project-img">
+                        <p>
+                            <span class="code">&lt;</span>
+                            <span class="project-name"> EDUCATION PRO
+ </span>
+                            <span class="code">/&gt;</span>
+                        </p>
+                    </a>
+                </div>
+
+                <div target="_blank" class="box">
+                    <a href="https://educator-responsive-web.netlify.app/" id="profile-link" target="_blank">
+                        <img src="image/EDUCATOR.png" alt="" class="project-img">
+                        <p>
+                            <span class="code">&lt;</span>
+                            <span class="project-name"> EDUCATOR </span>
+                            <span class="code">/&gt;</span>
+                        </p>
+                    </a>
+                </div>
+
+                <div target="_blank" class="box">
+                    <a href="https://alimulalam.github.io/World-cup-responsive/" id="profile-link" target="_blank">
+                        <img src="image/World-cup-responsive.png" alt="" class="project-img">
+                        <p>
+                            <span class="code">&lt;</span>
+                            <span class="project-name"> World Cup Responsive </span>
+                            <span class="code">/&gt;</span>
+                        </p>
+                    </a>
+                </div>
                
             </div>
         </div>

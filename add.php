@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $education = isset($_POST['education']) ? $_POST['education'] : [];
     $educationValues = implode(", ", $education);
     $gender = $_POST['gender'];
-    $comments = $_POST['comments'];
+    // $comments = $_POST['comments'];
 
 
 

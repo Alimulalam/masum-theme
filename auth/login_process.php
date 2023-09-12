@@ -28,7 +28,7 @@
            if ($query-> num_rows > 0) {
                 $_SESSION['useremail']=$user_email;
             
-                header('location:../profile.php');
+                header('location:../index.php');
 
            }else{
             header('location:login.php');
